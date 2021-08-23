@@ -1,0 +1,97 @@
+:root {
+  --bg-color: #000000;
+  --font-color: #ffffff;
+}
+
+.lightMode {
+  --bg-color: #ffffff;
+  --font-color: #000000;
+}
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+}
+body{
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.sb{
+    justify-content: space-between;
+}
+.logo{
+    margin: 50px 0;
+}
+
+.light{
+    filter: invert(1);
+}
+
+
+
+.icon{
+    background-color: var(--font-color);
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .2s ease-out;
+
+}
+.icon>*{
+    background-color: var(--font-color);
+    fill: var(--bg-color) !important;
+    transition: all .2s ease-out;
+
+}
+button{
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--font-color);
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+#input{
+    height: fit-content;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 14px;
+    border-style: none;
+    outline: none;
+}
+
+.toggle{
+    cursor: pointer;
+}
+.sun{
+    height: 30px;
+    width: 30px;
+    background-color: var(--font-color);
+        border-radius: 15px;
+
+}
+.moon{
+    position: relative;
+    top: -8px;
+    left: 39px;
+    background-color: var(--bg-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    transition: none;
+}
+.off{
+    top: -20px !important;
+    left: 60px !important;
+}
