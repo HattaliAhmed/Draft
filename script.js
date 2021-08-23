@@ -4,7 +4,7 @@ function init() {
     const input = document.getElementById("input");
 
     input.innerHTML = window.location.hash.length === 0 ?
-        "Create easily shareable notes"
+        "Create easily shareable notes with Draft."
         : decodeURI(atob(window.location.hash.substring(1)));
     window.location.hash = encodeURI(btoa(input.innerHTML));
     input.addEventListener('keyup', () => {
